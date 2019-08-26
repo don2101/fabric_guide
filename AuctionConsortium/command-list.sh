@@ -45,7 +45,7 @@ sudo docker-compose -f kafka-compose.yaml up -d
 sudo docker-compose -f orderer-compose.yaml up
 
 # check orderer001
-nc -z 0.0.0.0 7050
+nc -z 0.0.0.0 8050
 if [ "$?" != 0 ]; then
     echo 'orderer001 run fail. Please check docker log.'
 else
